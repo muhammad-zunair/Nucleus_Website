@@ -4,9 +4,146 @@
 body
 	font-family: "NexaLight", sans-serif
 	background-color: #fff
+#header
+	-webkit-transition: all 0.75s ease
+	-moz-transition: all 0.75s ease
+	-o-transition: all 0.75s ease
+	transition: all 0.75s ease
+	
+.myFade
+	-webkit-transition: all 0.75s ease
+	-moz-transition: all 0.75s ease
+	-o-transition: all 0.75s ease
+	transition: all 0.75s ease
+	
+.nucleusFont
+	font-family: "MarketingScript", cursive
 
+.navbar-default-white
+	background-color: #fff
+	border-color: #3e56a6
+	
+	a
+		color: #3e56a6
+		:hover
+			background-color: transparent
+	
+.navbar-default-blue
+	background-color: transparent
+	border-color: transparent
+	color: #fff
+	
+	a
+		color: #fff
+		
+	.navbar-nav
+		li
+			a
+				&:before
+					background-color: #fff
+
+.active
+	a
+		&:before
+			position: absolute
+			width: 100%
+			height: 4px
+			bottom: 0
+			left: 0
+			background-color: #3e56a6
+			visibility: visible
+			-webkit-transform: scaleX(1)
+			transform: scaleX(1)
+			-webkit-transition: all 0.3s ease-in-out 0s
+			transition: all 0.3s ease-in-out 0s			
+		
+.navbar-nav
+	li
+		a
+			&:before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 4px
+				bottom: 0
+				left: 0
+				background-color: #3e56a6
+				visibility: hidden
+				-webkit-transform: scaleX(0)
+				transform: scaleX(0)
+				-webkit-transition: all 0.3s ease-in-out 0s
+				transition: all 0.3s ease-in-out 0s
+			&:hover
+				background-color: transparent
+				&:before
+					visibility: visible
+					-webkit-transform: scaleX(1)
+					transform: scaleX(1)
+			&:focus
+				&:before
+					visibility: visible
+					-webkit-transform: scaleX(1)
+					transform: scaleX(1)
+				background-color: transparent
+	
+	
+.skewContainer
+	display: block
+	width: 100%
+	overflow: hidden
 
 .body-container
+	padding-top: 100px
+	padding-bottom: 100px
+	background-color: #3E56A6
+	color: #fff
+	height: 545px
+	
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+		width: 100%
+		height: 100px
+		background-color: #3e56a6
+		-webkit-transform: skewY(-3deg)
+		-moz-transform: skewY(-3deg)
+		-ms-transform: skewY(-3deg)
+		-o-transform: skewY(-3deg)
+		transform: skewY(-3deg)
+		
+	h1
+		font-family: "MarketingScript", cursive
+		font-size: 100px
+		
+
+		
+.body-image
+	background-image: url("img/IMG_1278.jpg")
+	background-color: #eee
+	background-attachment: fixed
+	background-size: cover
+	height: 700px
+	background-repeat: no-repeat
+	z-index: -1000000
+	top: 700px
+	
+.info-container
 	background-color: #3E56A6
 	height: 100vh
 	color: #fff
+	height: 400px
+	
+	&:before
+		content: ""
+		position: absolute
+		margin-top: -80px
+		left: 0
+		width: 100%
+		height: 400px
+		background-color: #3e56a6
+		-webkit-transform: skewY(-3deg)
+		-moz-transform: skewY(-3deg)
+		-ms-transform: skewY(-3deg)
+		-o-transform: skewY(-3deg)
+		transform: skewY(-3deg)

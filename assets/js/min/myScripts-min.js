@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(this).scrollTop()>100?($("#header").addClass("navbar-default-white"),$("#header").removeClass("navbar-default-blue")):($("#header").addClass("navbar-default-blue"),$("#header").removeClass("navbar-default-white"))});
