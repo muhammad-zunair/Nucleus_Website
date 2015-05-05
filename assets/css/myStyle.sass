@@ -4,6 +4,9 @@
 body
 	font-family: "NexaLight", sans-serif
 	background-color: #fff
+
+	
+
 #header
 	-webkit-transition: all 0.75s ease
 	-moz-transition: all 0.75s ease
@@ -23,6 +26,8 @@ body
 	background-color: #fff
 	border-color: #3e56a6
 	
+	.icon-bar
+		background-color: #3e56a6
 	a
 		color: #3e56a6
 		:hover
@@ -33,6 +38,8 @@ body
 	border-color: transparent
 	color: #fff
 	
+	.icon-bar
+		background-color: #fff
 	a
 		color: #fff
 		
@@ -45,6 +52,7 @@ body
 .active
 	a
 		&:before
+			content: ""
 			position: absolute
 			width: 100%
 			height: 4px
@@ -55,36 +63,42 @@ body
 			-webkit-transform: scaleX(1)
 			transform: scaleX(1)
 			-webkit-transition: all 0.3s ease-in-out 0s
-			transition: all 0.3s ease-in-out 0s			
-		
-.navbar-nav
+			transition: all 0.3s ease-in-out 0s
+
+.nav
 	li
 		a
-			&:before
-				content: ""
-				position: absolute
-				width: 100%
-				height: 4px
-				bottom: 0
-				left: 0
-				background-color: #3e56a6
-				visibility: hidden
-				-webkit-transform: scaleX(0)
-				transform: scaleX(0)
-				-webkit-transition: all 0.3s ease-in-out 0s
-				transition: all 0.3s ease-in-out 0s
 			&:hover
 				background-color: transparent
-				&:before
-					visibility: visible
-					-webkit-transform: scaleX(1)
-					transform: scaleX(1)
 			&:focus
-				&:before
-					visibility: visible
-					-webkit-transform: scaleX(1)
-					transform: scaleX(1)
 				background-color: transparent
+
+a
+	&:before
+		content: ""
+		position: absolute
+		width: 100%
+		height: 4px
+		bottom: 0
+		left: 0
+		background-color: #3e56a6
+		visibility: hidden
+		-webkit-transform: scaleX(0)
+		transform: scaleX(0)
+		-webkit-transition: all 0.3s ease-in-out 0s
+		transition: all 0.3s ease-in-out 0s
+	&:hover
+		background-color: transparent
+		&:before
+			visibility: visible
+			-webkit-transform: scaleX(1)
+			transform: scaleX(1)
+	&:focus
+		&:before
+			visibility: visible
+			-webkit-transform: scaleX(1)
+			transform: scaleX(1)
+		background-color: transparent
 	
 	
 .skewContainer
@@ -94,23 +108,25 @@ body
 
 .body-container
 	padding-top: 100px
-	padding-bottom: 100px
+	padding-bottom: 60px
 	background-color: #3E56A6
 	color: #fff
-	height: 545px
+
+
 	
 	&:after
 		content: ""
 		position: absolute
 		left: 0
+
 		width: 100%
 		height: 100px
 		background-color: #3e56a6
-		-webkit-transform: skewY(-3deg)
-		-moz-transform: skewY(-3deg)
-		-ms-transform: skewY(-3deg)
-		-o-transform: skewY(-3deg)
-		transform: skewY(-3deg)
+		-webkit-transform: skewY(2deg)
+		-moz-transform: skewY(2deg)
+		-ms-transform: skewY(2deg)
+		-o-transform: skewY(2deg)
+		transform: skewY(2deg)
 		
 	h1
 		font-family: "MarketingScript", cursive
@@ -120,6 +136,15 @@ body
 		
 .body-image
 	background-image: url("img/IMG_1278.jpg")
+	background-color: #d3d3d3
+	background-attachment: fixed
+	background-size: cover
+	height: 700px
+	background-repeat: no-repeat
+	z-index: -1000000
+	top: 700px
+	
+.body-image2
 	background-color: #eee
 	background-attachment: fixed
 	background-size: cover
