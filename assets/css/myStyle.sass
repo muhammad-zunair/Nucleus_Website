@@ -1,5 +1,8 @@
 @import "fonts"
 
+$primary-color: #3e56a6
+$secondary-color: #ffffff
+
 
 body
 	font-family: "NexaLight", sans-serif
@@ -26,12 +29,12 @@ body
 
 .navbar-default-white
 	background-color: #fff
-	border-color: #3e56a6
+	border-color: $primary-color
 
 	.icon-bar
-		background-color: #3e56a6
+		background-color: $primary-color
 	a
-		color: #3e56a6
+		color: $primary-color
 		&:hover
 			background-color: transparent
 
@@ -73,7 +76,7 @@ body
 				height: 4px
 				bottom: 0
 				left: 0
-				background-color: #3e56a6
+				background-color: $primary-color
 				visibility: visible
 				-webkit-transform: scaleX(1)
 				transform: scaleX(1)
@@ -87,7 +90,7 @@ body
 			height: 4px
 			bottom: 0
 			left: 0
-			background-color: #3e56a6
+			background-color: $primary-color
 			visibility: hidden
 			-webkit-transform: scaleX(0)
 			transform: scaleX(0)
@@ -119,7 +122,7 @@ body
 .body-container
 	padding-top: 100px
 	padding-bottom: 60px
-	background-color: #3E56A6
+	background-color: $primary-color
 	color: #fff
 
 
@@ -153,7 +156,7 @@ body
 	top: 700px
 
 .info-container
-	background-color: #3E56A6
+	background-color: $primary-color
 	color: #fff
 	padding-bottom: 50px
 
@@ -165,7 +168,7 @@ body
 		left: 0
 		width: 100%
 		height: 400px
-		background-color: #3e56a6
+		background-color: $primary-color
 		-webkit-transform: skewY(-3deg)
 		-moz-transform: skewY(-3deg)
 		-ms-transform: skewY(-3deg)
@@ -174,21 +177,21 @@ body
 
 .contactus-container
 	padding-top: 30px
-	padding-bottom: 40px
-	color: #3e56a6
+	padding-bottom: 50px
+	color: $primary-color
 	&:after
 		content: ""
 		position: absolute
 		left: 0
 
 		width: 100%
-		height: 100px
-		background-color: #ffffff
-		-webkit-transform: skewY(2deg)
-		-moz-transform: skewY(2deg)
-		-ms-transform: skewY(2deg)
-		-o-transform: skewY(2deg)
-		transform: skewY(2deg)
+		height: 115px
+		background-color: $secondary-color
+		-webkit-transform: skewY(4deg)
+		-moz-transform: skewY(4deg)
+		-ms-transform: skewY(4deg)
+		-o-transform: skewY(4deg)
+		transform: skewY(3deg)
 
 .inputarea
 	padding: 15px
@@ -200,7 +203,7 @@ body
 
 	.inputsubmit
 		padding: 10px 5px
-		background-color: #3e56a6
+		background-color: $primary-color
 		color: white
 		padding: 15px 25px
 		text-decoration: none
@@ -211,19 +214,19 @@ body
 		padding: 3px 7px
 		width: 400px
 		text-align: center
-		background-color: #3e56a6
-		border: 1px solid #3e56a6
-		color: #ffffff
+		background-color: $primary-color
+		border: 1px solid $primary-color
+		color: $secondary-color
 
 		&:focus
 			outline: none
-			border: #3e56a6 1px solid
-			background-color: #ffffff
-			color: #3e56a6
+			border: $primary-color 1px solid
+			background-color: $secondary-color
+			color: $primary-color
 
 
 
 .footer
-	background-color: #3e56a6
+	background-color: $primary-color
 	height: 200px
-	color: #ffffff
+	color: $secondary-color
