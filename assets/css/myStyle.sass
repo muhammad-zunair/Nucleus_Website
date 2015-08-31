@@ -5,65 +5,55 @@ body
 	font-family: "NexaLight", sans-serif
 	background-color: #fff
 
-	
+
 
 #header
 	-webkit-transition: all 0.75s ease
 	-moz-transition: all 0.75s ease
 	-o-transition: all 0.75s ease
 	transition: all 0.75s ease
-	
+
 .myFade
 	-webkit-transition: all 0.75s ease
 	-moz-transition: all 0.75s ease
 	-o-transition: all 0.75s ease
 	transition: all 0.75s ease
-	
+
+
+
 .nucleusFont
 	font-family: "MarketingScript", cursive
 
 .navbar-default-white
 	background-color: #fff
 	border-color: #3e56a6
-	
+
 	.icon-bar
 		background-color: #3e56a6
 	a
 		color: #3e56a6
-		:hover
+		&:hover
 			background-color: transparent
-	
+
+
+
 .navbar-default-blue
 	background-color: transparent
 	border-color: transparent
 	color: #fff
-	
+
 	.icon-bar
 		background-color: #fff
 	a
 		color: #fff
-		
+
 	.navbar-nav
 		li
 			a
 				&:before
 					background-color: #fff
 
-.active
-	a
-		&:before
-			content: ""
-			position: absolute
-			width: 100%
-			height: 4px
-			bottom: 0
-			left: 0
-			background-color: #3e56a6
-			visibility: visible
-			-webkit-transform: scaleX(1)
-			transform: scaleX(1)
-			-webkit-transition: all 0.3s ease-in-out 0s
-			transition: all 0.3s ease-in-out 0s
+
 
 .nav
 	li
@@ -73,34 +63,54 @@ body
 			&:focus
 				background-color: transparent
 
-a
-	&:before
-		content: ""
-		position: absolute
-		width: 100%
-		height: 4px
-		bottom: 0
-		left: 0
-		background-color: #3e56a6
-		visibility: hidden
-		-webkit-transform: scaleX(0)
-		transform: scaleX(0)
-		-webkit-transition: all 0.3s ease-in-out 0s
-		transition: all 0.3s ease-in-out 0s
-	&:hover
-		background-color: transparent
+.allowUnderline
+	.active
+		a
+			&:before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 4px
+				bottom: 0
+				left: 0
+				background-color: #3e56a6
+				visibility: visible
+				-webkit-transform: scaleX(1)
+				transform: scaleX(1)
+				-webkit-transition: all 0.3s ease-in-out 0s
+				transition: all 0.3s ease-in-out 0s
+	a
 		&:before
-			visibility: visible
-			-webkit-transform: scaleX(1)
-			transform: scaleX(1)
-	&:focus
-		&:before
-			visibility: visible
-			-webkit-transform: scaleX(1)
-			transform: scaleX(1)
-		background-color: transparent
-	
-	
+			content: ""
+			position: absolute
+			width: 100%
+			height: 4px
+			bottom: 0
+			left: 0
+			background-color: #3e56a6
+			visibility: hidden
+			-webkit-transform: scaleX(0)
+			transform: scaleX(0)
+			-webkit-transition: all 0.3s ease-in-out 0s
+			transition: all 0.3s ease-in-out 0s
+		&:hover
+			background-color: transparent
+			&:before
+				visibility: visible
+				-webkit-transform: scaleX(1)
+				transform: scaleX(1)
+		&:focus
+			&:before
+				visibility: visible
+				-webkit-transform: scaleX(1)
+				transform: scaleX(1)
+			background-color: transparent
+
+
+
+
+
+
 .skewContainer
 	display: block
 	width: 100%
@@ -113,27 +123,15 @@ a
 	color: #fff
 
 
-	
-	&:after
-		content: ""
-		position: absolute
-		left: 0
 
-		width: 100%
-		height: 100px
-		background-color: #3e56a6
-		-webkit-transform: skewY(2deg)
-		-moz-transform: skewY(2deg)
-		-ms-transform: skewY(2deg)
-		-o-transform: skewY(2deg)
-		transform: skewY(2deg)
-		
+
+
 	h1
 		font-family: "MarketingScript", cursive
 		font-size: 100px
-		
 
-		
+
+
 .body-image
 	background-image: url("img/IMG_1278.jpg")
 	background-color: #d3d3d3
@@ -143,7 +141,8 @@ a
 	background-repeat: no-repeat
 	z-index: -1000000
 	top: 700px
-	
+
+
 .body-image2
 	background-color: #eee
 	background-attachment: fixed
@@ -152,13 +151,13 @@ a
 	background-repeat: no-repeat
 	z-index: -1000000
 	top: 700px
-	
+
 .info-container
 	background-color: #3E56A6
-	height: 100vh
 	color: #fff
-	height: 400px
-	
+	padding-bottom: 50px
+
+
 	&:before
 		content: ""
 		position: absolute
@@ -172,3 +171,59 @@ a
 		-ms-transform: skewY(-3deg)
 		-o-transform: skewY(-3deg)
 		transform: skewY(-3deg)
+
+.contactus-container
+	padding-top: 30px
+	padding-bottom: 40px
+	color: #3e56a6
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+
+		width: 100%
+		height: 100px
+		background-color: #ffffff
+		-webkit-transform: skewY(2deg)
+		-moz-transform: skewY(2deg)
+		-ms-transform: skewY(2deg)
+		-o-transform: skewY(2deg)
+		transform: skewY(2deg)
+
+.inputarea
+	padding: 15px
+
+	.descriptioninput
+		height: 100px
+		resize: none
+
+
+	.inputsubmit
+		padding: 10px 5px
+		background-color: #3e56a6
+		color: white
+		padding: 15px 25px
+		text-decoration: none
+
+
+	.custominputtext
+		line-height: 1.6
+		padding: 3px 7px
+		width: 400px
+		text-align: center
+		background-color: #3e56a6
+		border: 1px solid #3e56a6
+		color: #ffffff
+
+		&:focus
+			outline: none
+			border: #3e56a6 1px solid
+			background-color: #ffffff
+			color: #3e56a6
+
+
+
+.footer
+	background-color: #3e56a6
+	height: 200px
+	color: #ffffff
